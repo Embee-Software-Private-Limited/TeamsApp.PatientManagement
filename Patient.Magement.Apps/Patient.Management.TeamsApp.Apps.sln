@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamsApp.PatientManagement.Common", "TeamsApp.PatientManagement.Common\TeamsApp.PatientManagement.Common.csproj", "{652E8394-1E2B-41C7-A059-00F637F4E4EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamsApp.PatientManagement.Bot", "TeamsApp.PatientManagement.Bot\TeamsApp.PatientManagement.Bot.csproj", "{3979312D-37C4-44D6-9544-28485683774B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E75CF6BB-4BBD-4403-95BD-B5CFA499836F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{652E8394-1E2B-41C7-A059-00F637F4E4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652E8394-1E2B-41C7-A059-00F637F4E4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652E8394-1E2B-41C7-A059-00F637F4E4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652E8394-1E2B-41C7-A059-00F637F4E4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3979312D-37C4-44D6-9544-28485683774B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3979312D-37C4-44D6-9544-28485683774B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3979312D-37C4-44D6-9544-28485683774B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3979312D-37C4-44D6-9544-28485683774B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {612A3B88-8FF9-4973-A587-D6A651E29E41}
+	EndGlobalSection
+EndGlobal

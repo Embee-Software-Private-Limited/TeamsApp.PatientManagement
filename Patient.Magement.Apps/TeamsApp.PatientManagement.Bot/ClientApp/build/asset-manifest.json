@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0bc09f5e.chunk.css",
+    "main.js": "/static/js/main.eaa80082.chunk.js",
+    "main.js.map": "/static/js/main.eaa80082.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5bf7ad1c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5bf7ad1c.js.map",
+    "static/css/2.a13df02e.chunk.css": "/static/css/2.a13df02e.chunk.css",
+    "static/js/2.1b85703a.chunk.js": "/static/js/2.1b85703a.chunk.js",
+    "static/js/2.1b85703a.chunk.js.map": "/static/js/2.1b85703a.chunk.js.map",
+    "static/js/3.01797f67.chunk.js": "/static/js/3.01797f67.chunk.js",
+    "static/js/3.01797f67.chunk.js.map": "/static/js/3.01797f67.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a13df02e.chunk.css.map": "/static/css/2.a13df02e.chunk.css.map",
+    "static/css/main.0bc09f5e.chunk.css.map": "/static/css/main.0bc09f5e.chunk.css.map",
+    "static/js/2.1b85703a.chunk.js.LICENSE.txt": "/static/js/2.1b85703a.chunk.js.LICENSE.txt",
+    "static/media/addVitalbg.295af23e.svg": "/static/media/addVitalbg.295af23e.svg",
+    "static/media/style.scss": "/static/media/chevron-circle-up-solid.54ce8d22.svg",
+    "static/media/pdf-download.6b6c8b89.svg": "/static/media/pdf-download.6b6c8b89.svg",
+    "static/media/pdf-download_lg.fe9ccef6.svg": "/static/media/pdf-download_lg.fe9ccef6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bf7ad1c.js",
+    "static/css/2.a13df02e.chunk.css",
+    "static/js/2.1b85703a.chunk.js",
+    "static/css/main.0bc09f5e.chunk.css",
+    "static/js/main.eaa80082.chunk.js"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "<ManifiestId>",
+    "packageName": "com.teamsapp.patientmanagement.admin",
+    "developer": {
+        "name": "Embee Software Pvt Limited",
+        "websiteUrl": "https://embee.co.in/",
+        "privacyUrl": "https://embee.co.in/embee-privacypolicy/",
+        "termsOfUseUrl": "https://embee.co.in/virtuaplace/embee-terms-and-conditions/",
+		"mpnId": ""
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Patient Management Admin",
+        "full": "Patient Management Admin"
+    },
+    "description": {
+        "short": "Patient Management Admin",
+        "full": "Patient Management Admin"
+    },
+    "accentColor": "#2E7AA2",
+    "staticTabs": [
+        {
+            "entityId": "adminconfiguration",
+            "name": "Admin Configuration",
+            "contentUrl": "https://<AppDomain>/admin/department/list",
+            "websiteUrl": "https://<AppDomain>/admin/department/list",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "*.azurewebsites.net"
+    ],
+    "webApplicationInfo": {
+        "id": "<AppId>",
+        "resource": "api://<AppDomain>/botid-<AppId>"
+    }
+}

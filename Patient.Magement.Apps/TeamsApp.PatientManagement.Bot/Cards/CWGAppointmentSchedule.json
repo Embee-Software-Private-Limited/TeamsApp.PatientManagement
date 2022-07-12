@@ -1,0 +1,123 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "${Title}"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "width": "stretch",
+                  "style": "good",
+                  "items": [
+                    {
+                      "columns": [
+                        {
+                          "type": "Column",
+                          "width": "auto",
+                          "items": [
+                            {
+                              "type": "Image",
+                              "url": "https://i.ibb.co/pZCL1Hy/001-calendar.png",
+                              "size": "Small",
+                              "spacing": "Small",
+                              "backgroundColor": "blue",
+                              "width": "18px",
+                              "height": "18px"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Column",
+                          "width": "stretch",
+                          "items": [
+                            {
+                              "type": "TextBlock",
+                              "text": "${DateDescription}",
+                              "wrap": true,
+                              "weight": "Bolder",
+                              "height": "auto",
+                              "maxLines": 0,
+                              "separator": true,
+                              "color": "Dark"
+                            }
+                          ],
+                          "verticalContentAlignment": "Center",
+                          "spacing": "Small",
+                          "height": "stretch"
+                        },
+                        {
+                          "type": "Column",
+                          "width": "auto",
+                          "items": [
+                            {
+                              "type": "TextBlock",
+                              "text": "${Status}",
+                              "wrap": true,
+                              "horizontalAlignment": "Right",
+                              "height": "auto",
+                              "color": "Dark"
+                            }
+                          ],
+                          "verticalContentAlignment": "Center",
+                          "spacing": "Small"
+                        }
+                      ],
+                      "type": "ColumnSet"
+                    }
+                  ],
+                  "spacing": "Small",
+                  "verticalContentAlignment": "Center",
+                  "height": "stretch",
+                  "minHeight": "30px"
+                }
+              ]
+            }
+          ],
+          "type": "Column",
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Description}",
+      "wrap": true
+    }
+  ],
+  "msteams": {
+    "width": "Full"
+  },
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Cancel this break",
+      "id": "CancelBreak",
+      "data": {
+        "msteams": {
+          "type": "messageBack",
+          "text": "CancelBreak",
+          "value": "CancelBreak"
+        },
+        "Command": "CancelBreak",
+        "AppointmentId": "${AppointmentId}",
+        "Origin": "${Origin}",
+        "OriginAadObjectId": "${OriginAadObjectId}"
+      }
+    }
+  ]
+
+}
+
