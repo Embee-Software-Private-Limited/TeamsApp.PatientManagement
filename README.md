@@ -1,6 +1,45 @@
 # Patient Management App
 
+A custom-built patient management solution that runs on Teams and manages patient flow from registration to discharge. Digitize electronic medical records of the patients and manage interaction between hospital & patient at one central location like past appointments, treatments, prescriptions, medical documents etc.
+
+# Key Features 
+ - Ability to track, store and access patient's medical records and integrate seamlessly with independent EHR/EMR solutions. 
+ - Admin view / access to map the department with that of the Teams’ group for the information to flow to the appropriate team / department based on the patient information.
+ - Whenever a new patient admission information is transferred from Either app by calling patient management team app endpoint, an adaptive card is sent in the specific dept. which are mapped to teams' group and the message will be posted on the general channel 
+
+# Business Benefit 
+
+- Set aside the manual paperwork and keep track of patient records, it will help doctors to keep track of patient current and previous health-related medical history records. 
+- Doctors and Nurses will get a better experience from the initial phase of registration to the time they are discharged.  
+- Manage all the hospital’s operations, even with fewer human resources. Moreover, this will also limit human interference in the system, resulting in lower operational costs and less leakage. 
+- No risks of data loss and patients' data remains completely protected. Everything is done through a secure system, only authorized individuals have access to the specific data collection.  
+- With a centralized system, doctors, administrative personnel, and other employees can access data in real-time, enabling them to make the best decisions possible. 
+ 
 More screenshots and tips on how to use the app are in the [Wiki](https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki) of this repository.
+
+
+
+
+# Tools and Technologies
+- Azure Bot Service 
+- App Service Plan 
+- Azure Monitor (Application Insights) 
+- Storage Account (Table) 
+- .Net Core 3.1
+- C#
+- React Js
+- Type Script
+- Node Js
+- MS Graph API
+
+# About Embee
+
+Embee helps in deploying technologies for efficient delivery processes, better utilization of resources, and optimization to scale performance.   
+
+ - 30+ years of experience in providing customized IT solutions
+ - Served customers across Indian and Global Markets    
+ - 16+ awards for significant contribution to Indian IT landscape   
+ - Pan India presence with 11 offices across the country 
 
 # Legal Notice
 
