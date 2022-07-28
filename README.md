@@ -59,6 +59,7 @@ More screenshots and tips on how to use the app are in the [Wiki](https://github
 - Type Script
 - Node Js
 - MS Graph API
+- MS Microsoft Bot Framework v4
 
 ### About Embee
 
