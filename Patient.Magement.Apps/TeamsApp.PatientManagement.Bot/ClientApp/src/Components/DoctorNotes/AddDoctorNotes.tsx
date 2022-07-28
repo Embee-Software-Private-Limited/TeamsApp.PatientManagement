@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container,Row } from 'react-bootstrap';
-import { Text, Button, Loader, Datepicker, FormDropdown} from '@fluentui/react-northstar';
+import { Text, Button, Loader, Datepicker, FormDropdown, Segment} from '@fluentui/react-northstar';
 import { ChevronLeft24Regular} from '@fluentui/react-icons';
 import moment from 'moment';
 import * as microsoftTeams from "@microsoft/teams-js";
@@ -45,14 +45,15 @@ interface IState {
     Hour:string,
     Minute:string,
     DefaultDate?:any,
-    AccessToken?:any
+    AccessToken?: any
+   
 }
 
 class AddDoctorNotes extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
         this.state = {
-            loading: false,
+            loading: true,
             editorState: EditorState.createEmpty(),
             submitLoading:false,
             errorMessage:'',
@@ -101,19 +102,28 @@ class AddDoctorNotes extends React.Component<IProps, IState> {
         console.log('hi');
             var pHead="Add Doctor's Note";
             var butHead="Add Doctor's Note"
-            if(this.props.location.state.DoctorNotesDetails!=null){
-                pHead="Update Doctor's Note";
-                butHead="Update Doctor's Note";
-                console.log(this.props.location.state.DoctorNotesDetails.DoctorNoteDate);
-                this.setState({Description:this.props.location.state.DoctorNotesDetails.Description,
-                    DoctorNoteId:this.props.location.state.DoctorNotesDetails.DoctorNoteId,
-                    Date:moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('YYYY-MM-DD'),
-                    Hour:moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('HH'),
-                    Minute:moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('mm'),
-                    DefaultDate:new Date(this.props.location.state.DoctorNotesDetails.DoctorNoteDate)                   
-                }, ()=>this.setEditorState());
-               
-            }
+        if (this.props.location.state.DoctorNotesDetails != null) {
+            pHead = "Update Doctor's Note";
+            butHead = "Update Doctor's Note";
+            console.log(this.props.location.state.DoctorNotesDetails.DoctorNoteDate);
+            this.setState({
+                Description: this.props.location.state.DoctorNotesDetails.Description,
+                DoctorNoteId: this.props.location.state.DoctorNotesDetails.DoctorNoteId,
+                Date: moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('YYYY-MM-DD'),
+                Hour: moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('HH'),
+                Minute: moment(this.props.location.state.DoctorNotesDetails.DoctorNoteDate).format('mm'),
+                DefaultDate: new Date(this.props.location.state.DoctorNotesDetails.DoctorNoteDate)
+            }, () => this.setEditorState());
+
+        }
+        else {
+            this.setState({
+                Date: moment(new Date()).format('YYYY-MM-DD'),
+                Hour: moment(new Date()).format('HH'),
+                Minute: moment(new Date()).format('mm'),
+                DefaultDate: new Date()
+            });
+        }
             this.setState({
                 UHID:this.props.location.state.UHID,
                 AdmissionId:this.props.location.state.AdmissionId,
@@ -123,7 +133,7 @@ class AddDoctorNotes extends React.Component<IProps, IState> {
                 loading:false,
                 SubmitButtonText:butHead,
                 PageHeadding:pHead,
-                DefaultDate:this.state.DefaultDate?this.state.DefaultDate:new Date(),
+                //DefaultDate:this.state.DefaultDate?this.state.DefaultDate:new Date(),
                 PatientDetails: this.props.location.state.PatientDetails,
                 patientPrimaryDetails: this.props.location.state.PatientDetails,
             }, () => {
@@ -225,86 +235,90 @@ class AddDoctorNotes extends React.Component<IProps, IState> {
         }
      }; 
     render() {
-         
-        return (
-            <div>
-               <Container fluid>
-                    <div className='d-flex justify-content-between align-items-center my-3'>
-                        <div><a href='javascript:void(0);' onClick={()=>this.onBackClick('/doctornotes/view')}><ChevronLeft24Regular /></a></div>
-                        <div className='d-flex'><Text className='ms-2' content={this.state.PageHeadding} size="medium" weight="semibold" /></div>
-                        <div></div>
-                    </div>
-                    {this.BuildPatientPrimaryDetails()}
-                    <Row className="mt-3">
-                        <div className="col-12">
-                            <div className='mb-2'>
-                                <Editor
-                                    editorState={this.state.editorState}
-                                    wrapperClassName="wrapper-class flex-fill"
-                                    editorClassName="editor-class"
-                                    toolbarClassName="toolbar-class"
-                                    toolbar={{
-                                        options: ['inline', 'blockType', 'fontSize', 'list', 'textAlign', 'history'],
-                                        list: { inDropdown: true },
-                                        textAlign: { inDropdown: true },
-                                    }}
-                                    onEditorStateChange={(e) => this.onEditorStateChange(e)}
-                                />
-                            </div>
+        if (!this.state.loading)  {
+            return (
+                <div>
+                    <Container fluid>
+                        <div className='d-flex justify-content-between align-items-center my-3'>
+                            <div><a href='javascript:void(0);' onClick={() => this.onBackClick('/doctornotes/view')}><ChevronLeft24Regular /></a></div>
+                            <div className='d-flex'><Text className='ms-2' content={this.state.PageHeadding} size="medium" weight="semibold" /></div>
+                            <div></div>
                         </div>
-                        <div className='col-md-4 mb-4 '>
-                            <Row>
+                        {this.BuildPatientPrimaryDetails()}
+                        <Row className="mt-3">
+                            <div className="col-12">
+                                <div className='mb-2'>
+                                    <Editor
+                                        editorState={this.state.editorState}
+                                        wrapperClassName="wrapper-class flex-fill"
+                                        editorClassName="editor-class"
+                                        toolbarClassName="toolbar-class"
+                                        toolbar={{
+                                            options: ['inline', 'blockType', 'fontSize', 'list', 'textAlign', 'history'],
+                                            list: { inDropdown: true },
+                                            textAlign: { inDropdown: true },
+                                        }}
+                                        onEditorStateChange={(e) => this.onEditorStateChange(e)}
+                                    />
+                                </div>
+                            </div>
+                            <div className='col-md-4 mb-4 '>
+                                <Row>
 
-                            <div className='col-5 mb-2'>
+                                    <div className='col-5 mb-2'>
                                         <Text className='mb-1 p-0 d-block' color="grey" content="Date" size="small" timestamp />
                                         <Datepicker
-                                        allowManualInput={false}
+                                            allowManualInput={false}
                                             className='pikdate mb-2'
                                             inputPlaceholder=''
                                             inputOnly
-                                            defaultSelectedDate={this.state.DefaultDate?this.state.DefaultDate:new Date()}  
+                                            defaultSelectedDate={this.state.DefaultDate ? this.state.DefaultDate : new Date()}
                                             maxDate={new Date()}
-                                            onDateChange={(e:any, data:any)=>this.setState({Date:moment(data.value).format('YYYY-MM-DD')})}
+                                            onDateChange={(e: any, data: any) => this.setState({ Date: moment(data.value).format('YYYY-MM-DD') })}
                                         />
                                     </div>
 
                                     <div className='col-3'>
                                         <Text className='mb-1 p-0 d-block' color="grey" content="Hour" size="small" timestamp />
                                         <FormDropdown
-                                        className='overflow_off'
+                                            className='overflow_off'
                                             items={HoursList}
                                             placeholder={this.state.Hour}
                                             checkable
                                             fluid
-                                            onChange={(e:any,data:any)=> this.setState({Hour:data.value})}
+                                            onChange={(e: any, data: any) => this.setState({ Hour: data.value })}
                                         />
                                     </div>
 
                                     <div className='col-3'>
                                         <Text className='mb-1 p-0 d-block' color="grey" content="Minute" size="small" timestamp />
                                         <FormDropdown
-                                         className='overflow_off'
+                                            className='overflow_off'
                                             items={MinutesList}
                                             placeholder={this.state.Minute}
                                             checkable
                                             fluid
-                                            onChange={(e:any,data:any)=> this.setState({Minute:data.value})}
+                                            onChange={(e: any, data: any) => this.setState({ Minute: data.value })}
                                         />
                                     </div>
-                            </Row>
-                                    
-                            
+                                </Row>
+
+
+                            </div>
+                        </Row>
+                        {this.ErrorMessageContent()}
+                        <div className='py-3 d-flex justify-content-end'>
+                            <Button content="Back" secondary onClick={() => this.onBackClick('/doctornotes/view')} />
+                            <Button className='ms-2' disabled={this.state.submitLoading} content={this.state.submitLoading ? <Loader label="Submitting Data.." labelPosition='end'></Loader> : this.state.SubmitButtonText} primary onClick={() => this.submitHandler()} />
                         </div>
-                    </Row>
-                    {this.ErrorMessageContent()}
-                    <div className='py-3 d-flex justify-content-end'>
-                        <Button content="Back" secondary onClick={() => this.onBackClick('/doctornotes/view')} />
-                        <Button className='ms-2'  disabled={this.state.submitLoading} content={this.state.submitLoading?<Loader label="Submitting Data.." labelPosition='end'></Loader>:this.state.SubmitButtonText}  primary onClick={()=>this.submitHandler()} />
-                    </div>
-                </Container>           
-            </div>
-        );
+                    </Container>
+                </div>
+            );
+        }
+        else {
+            return <Segment><Loader /></Segment>
+        }
     }
-}
+} 
 
 export default AddDoctorNotes;
