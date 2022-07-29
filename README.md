@@ -6,12 +6,12 @@ During the nursing of a patient, while being admitted to the hospital, nursing s
 
 This will be used by the doctor to add to patient notes on the course of treatment. The hospital staff uses the team’s channel conversation thread linked to each patient to post regarding the same so that everyone is aware / updated of the patient’s information.  
 
-All these activities are also carried out on the Teams mobile app to have easy and immediate access 
+All these activities are also carried out on the Teams mobile app to have easy and immediate access. 
 
 ### Key Features 
  - Provision to configure the hospital’s department with that of Teams group for the information to flow to the appropriate team / department based on the patient information.
  - Whenever a new patient admission information is transferred from Either (Hospital Information System) app by calling patient management teams app endpoint, an adaptive card is sent in the specific dept. which are mapped to teams' group and the message will be posted on the general channel.
- - All the below mentioned information pertaining to a patient and related admission can be either viewed / added / updated on Teams platform itself:
+ - All the below mentioned information pertaining to a patient and related admission can be either viewed / added / updated on Teams platform:
    - View Patient Details like Unique Identification No., Admission No., Date of Admission, Personal Details etc. 
    - View the Lab Report(s)
    - View Medical History 
@@ -24,7 +24,6 @@ All these activities are also carried out on the Teams mobile app to have easy a
 
 - Set aside the manual paperwork and keep track of patient records, it will help doctors to keep track of patient current and previous health-related medical history records. 
 - Doctors and Nurses will get a better experience from the initial phase of registration to the time they are discharged.  
-- Manage all the hospital’s operations, even with fewer human resources. Moreover, this will also limit human interference in the system, resulting in lower operational costs and less leakage. 
 - No risks of data loss and patients' data remains completely protected. Everything is done through a secure system, only authorized individuals have access to the specific data collection.  
 - With a centralized system, doctors, administrative personnel, and other employees can access data in real-time, enabling them to make the best decisions possible. 
  
