@@ -41,7 +41,7 @@ More screenshots and tips on how to use the app are in the [Wiki](https://github
   
   ![Capture5](https://user-images.githubusercontent.com/81224711/181476959-b4f51dfb-12ab-4915-832d-7133fff1aa24.png)
 
-  - Vital's addition notificaiton in team's channel
+  - Vital's addition notification in team's channel
 
   ![Capture6](https://user-images.githubusercontent.com/81224711/181477062-34f34972-f2a3-4d5c-950c-d009ae6692fc.png)
 
