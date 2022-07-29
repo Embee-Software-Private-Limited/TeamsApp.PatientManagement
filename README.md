@@ -33,7 +33,7 @@ More screenshots and tips on how to use the app are in the [Wiki](https://github
   
   ![Capture1](https://user-images.githubusercontent.com/81224711/181476497-127d5840-da2d-46bf-bad8-1fce1db2f39f.png)
 
-  - Patient Detial Information
+  - Patient Detail Information
   
   ![Capture2](https://user-images.githubusercontent.com/81224711/181476721-57325bb2-0be7-43ec-88fc-fadf72d97611.PNG)
 
@@ -67,7 +67,7 @@ Embee helps in deploying technologies for efficient delivery processes, better u
  - 30+ years of experience in providing customized IT solutions
  - Served customers across Indian and Global Markets    
  - 16+ awards for significant contribution to Indian IT landscape   
- - Pan India presence with 11 offices across the country 
+ - PAN India presence with 11 offices across the country 
  
 Track, store, and access patient information with the Patient Management System by Embee. Interested?  
 
