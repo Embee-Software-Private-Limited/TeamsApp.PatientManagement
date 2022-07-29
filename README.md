@@ -4,9 +4,9 @@ A custom-built patient management solution that runs on MS Teams and manages pat
 
 During the nursing of a patient, while being admitted to the hospital, nursing staff are expected to report on the vitals, administration of medicines etc. to the doctor.  
 
-This will be used by doctors to add to patient notes on the course of treatment. The hospital staff uses the team’s channel conversation thread linked to each patient to post regarding the same so that everyone is aware / updated of the patient’s information.  
+This will be used by the doctor to add to patient notes on the course of treatment. The hospital staff uses the team’s channel conversation thread linked to each patient to post regarding the same so that everyone is aware / updated of the patient’s information.  
 
-All these activities are also carried out on the Teams mobile app as well to have easy and immediate access 
+All these activities are also carried out on the Teams mobile app to have easy and immediate access 
 
 ### Key Features 
  - Provision to configure the hospital’s department with that of Teams group for the information to flow to the appropriate team / department based on the patient information.
