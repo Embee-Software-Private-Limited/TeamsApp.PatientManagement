@@ -1,5 +1,14 @@
 ### Patient Management App
 
+<table>
+<thead>
+<tr>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Solution-Overview">Architecture</a></th>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki">Documentation</a></th>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Deployment-guide">Deployment guide</a></th>
+</tr>
+</thead>
+</table>
 A custom-built patient management solution that runs on MS Teams and manages patient information flow from registration to discharge.  
 
 During the nursing of a patient, while being admitted to the hospital, nursing staff are expected to report on the vitals, administration of medicines etc. to the doctor.  
