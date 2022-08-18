@@ -6,6 +6,9 @@
 <th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Solution-Overview">Architecture</a></th>
 <th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki">Documentation</a></th>
 <th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Deployment-guide">Deployment guide</a></th>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Cost-estimate">Cost estimate</a></th>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Data-stores">Data-stores</a></th>
+<th><a href="https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Third-Party-API-Dependencies">Third Party API Dependencies</a></th>
 </tr>
 </thead>
 </table>
