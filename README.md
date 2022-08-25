@@ -1,3 +1,22 @@
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Description</th>
+<th>Languages</th>
+<th>Products used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patient Management</td>
+<td>Patient management bot manages patient information flow from registration to discharge.</td>
+<td>csharp, react js</td>
+<td>ms-teams, microsoft azure</td>
+</tr>
+</tbody>
+</table>
+
 ### Patient Management App
 
 <table>
