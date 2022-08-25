@@ -40,20 +40,20 @@ All these activities are also carried out on the Teams mobile app to have easy a
  
 More screenshots and tips on how to use the app are in the [Wiki](https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki) of this repository.
 
-  - Whenever a new patient is admitted, an adaptive card as part of notification is sent to the doctor, nurse in the specific dept. which are mapped to teams' group and the message will be posted in general channel
+  - Whenever a new patient is admitted, an adaptive card as part of notification is sent in the department which are mapped to teams' group and the message will be posted in general channel by both the doctor and nurse.
 
   
   ![Capture1](https://user-images.githubusercontent.com/81224711/181476497-127d5840-da2d-46bf-bad8-1fce1db2f39f.png)
 
-  - Both the doctor and nurse can see the patient details after being notified on new admission with details like Unique ID, Date of admission etc.
+  - Both the doctor and nurse can see the patient details after being notified on new admission with the details like Unique ID, Date of admission etc.
   
   ![Capture2](https://user-images.githubusercontent.com/81224711/181476721-57325bb2-0be7-43ec-88fc-fadf72d97611.PNG)
 
-  - Vital's addition
+  - The vital information like Temperature, Height, Weight, Pulse Rate etc. for the patient can be added / updated and this can be done on regular intervals to track down the history.
   
   ![Capture5](https://user-images.githubusercontent.com/81224711/181476959-b4f51dfb-12ab-4915-832d-7133fff1aa24.png)
 
-  - Vital's addition notification in team's channel
+  - Once the vital information is added / updated, notification is sent in teams channel and the same can be viewed by both the doctor and nurse.
 
   ![Capture6](https://user-images.githubusercontent.com/81224711/181477062-34f34972-f2a3-4d5c-950c-d009ae6692fc.png)
 
