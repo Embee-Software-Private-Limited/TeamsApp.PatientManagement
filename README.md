@@ -40,7 +40,7 @@ All these activities are also carried out on the Teams mobile app to have easy a
  
 More screenshots and tips on how to use the app are in the [Wiki](https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki) of this repository.
 
-  - Whenever a new patient is admitted, an adaptive card as part of notification is sent in the department which are mapped to teams' group and the message will be posted in general channel by both the doctor and nurse.
+  - Whenever a new patient is admitted, an adaptive card as part of notification is sent in the department which are mapped to teams' group and the message will be posted in general channel, can be viewed by both the doctor and nurse.
 
   
   ![Capture1](https://user-images.githubusercontent.com/81224711/181476497-127d5840-da2d-46bf-bad8-1fce1db2f39f.png)
