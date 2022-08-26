@@ -122,3 +122,6 @@ Begin with the Solution overview to read about what the app does and how it work
 
 - [Deployment guide](https://github.com/Embee-Software-Private-Limited/TeamsApp.PatientManagement/wiki/Deployment-guide).
    - Use this option to deploy the app manually.
+   
+## DISCLAIMER:
+**THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
